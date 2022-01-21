@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple API Table</title>
+        <meta name="description" content="Simple API Table">
+        <meta name="author" content="Viktorija Bagdonaite">
+
+        <link href="./Libs/favicon.io.png" rel="icon">
+        <link href="Libs/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <table>
+            <tr>
+                <td>API name</td>
+                <td>API Description</td>
+            </tr>
+        
+            <tr>
+                <td>1. Wikipedia Search </td>
+                <td> Returns the wikipedia entries found for the searchterm
+                    <input type="text" id="title">
+                </td>
+                <td><button id="btnSubmit">Submit</button></td>
+            </tr>
+            <tr>
+                <td>2. Country Info</td>
+                <br>
+                <td> Country information : Capital, Population, Area in square km
+                    <select id="country">
+                        <option value="GB">Great Britain</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="US">USA</option>
+                    </select>
+                    <select id="language">
+                        <option value="GB">GB</option>
+                        <option value="FR">FR</option>
+                        <option value="DE">DE</option>
+                        <option value="US">USA</option>
+                    </select>
+                </td>
+                <td><button id="btnSubmit2">Submit</button></td>
+            </tr>
+            <tr>
+                <td>3. Postal Code Search </td>
+                <br>
+                <td> Search Postal Codes Using Placenames
+                    <p>Post Code Input</p>
+                    <input type="text" id="postCode">
+                    <p>Country Input</p>
+                   <input type="text" id="inputountry">
+                </td>
+                <td><button id="btnSubmit3">Submit</button></td>
+            </tr>
+            <div id="titleSearchResults">
+                <tr>
+                    <td id="txtAdminName2"></td>
+                    <td id="txtCountryCode"></td>
+                    <td id="txtPostalCode"></td>
+                    <td id="txtPlaceName"></td>
+                </tr>
+            </div>
+            <div>
+            <tr id="countryNameResults">
+                <td id="txtContinent"></td>
+                <td id="txtCapital"></td>
+                <td id="txtLanguages"></td>
+                <td id="txtPopulation"></td>
+                <td id="txtArea"></td>
+            </tr>
+        </div>
+           <div id="searchPostalCodesResults">
+        <tr>
+                <td id="txtCountryCode"></td>
+                <td id="txtPostalCode"></td>
+                <td id="txtAdminName1"></td>
+                <td id="txtPlaceName"></td>
+            </tr>
+        </div>
+        </table>
+    </div>
+    </div>
+
+
+
+    <div id="preloader"></div>
+    <script type="application/javascript" src="./Libs/js/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="./Libs/js/script.js"></script>
+    <script type="application/node" src="Libs/js/Node.js"></script>
+
+    </body>
+</html>
