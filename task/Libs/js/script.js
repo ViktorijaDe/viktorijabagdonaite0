@@ -20,6 +20,14 @@ $(window).on('load', function () {
 				success: function(result) {
 	
 					console.log(JSON.stringify(result));
+					
+					if (result.status.name = "ok") {
+						
+						$('#txtAdminName2').html(result['data'][0]['adminName2']);
+						$('#txtCountryCode').html(result['data'][0]['countryCode']);
+						$('#txtPostalCode').html(result['data'][0]['postalCode']);
+						$('txtPlaceName').html(result['data'][0]['placeName']);
+					}
 	
 				},
 	
@@ -86,6 +94,13 @@ $(window).on('load', function () {
 				success: function(result) {
 	
 					console.log(JSON.stringify(result));
+					
+					if (result.status.name = "ok") {
+						$('#txtCountryCode').html(result['data'][0]['countryCode']);
+						$('#txtPostalCode').html(result['data'][0]['postalCode']);
+						$('#txtAdminName1').html(result['data'][0]['adminName1']);
+						$('#txtPlaceName').html(result['data'][0]['placeName']);
+					}
 
 	
 				},
